@@ -6,6 +6,7 @@ import CoursePage from "./components/CoursePage";
 import { Routes, Route, Link, useParams } from "react-router-dom";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
+import "../src/App.css";
 function App() {
   const [data, setdata] = useState([]);
   const [summary, setsummary] = useState([]);
