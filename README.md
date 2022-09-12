@@ -1,5 +1,11 @@
 # Getting Started with Create React App
 
+1 - npm install
+2 - npm-install react-bootstrap
+3 - npx json-server --watch Constants/DB.json --port 8000
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
