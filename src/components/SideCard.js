@@ -1,9 +1,18 @@
-import React from "react";
+import { React, useState } from "react";
 import "../components_styles/SideCard.css";
 function SideCard({ getperc, obj_sum }) {
+  const [x, setX] = useState(true);
+  window.onscroll = (e) => {
+    if (window.scrollY > 400) setX(false);
+    if (window.scrollY < 350) setX(true);
+  };
   return (
     <div className="card">
-      <img src={obj_sum.image_480x270} class="card-img-top"></img>
+      <img
+        src={obj_sum.image_480x270}
+        class="card-img-top"
+        style={{ display: x ? "block" : "none" }}
+      ></img>
       <div className="card-body">
         <div className="card-price">
           <span className="cur-price">

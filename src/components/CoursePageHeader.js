@@ -1,8 +1,10 @@
 import { React, useState } from "react";
 import "../components_styles/Coursepgheader.css";
 import parse from "html-react-parser";
+import { MdNewReleases, MdLanguage, MdClosedCaption } from "react-icons/md";
 import SideCard from "./SideCard";
 function CoursePageHeader({ obj_sum, obj_data, CalcRate }) {
+  // get the percentage of disscount
   const getperc = (NewPrice, OldPrice) => {
     let dif = ((OldPrice - NewPrice) / OldPrice) * 100;
     dif = Math.ceil(dif);
@@ -10,8 +12,9 @@ function CoursePageHeader({ obj_sum, obj_data, CalcRate }) {
   };
   return (
     <>
-      <div className="container-fluid page-header ">
-        <div className="container-fluid page-header-content">
+      <SideCard getperc={getperc} obj_sum={obj_sum} />
+      <div className="page-header ">
+        <div className="page-header-content">
           <div className="path">
             <a href="">Development</a>
             <span className="arrow">&#10148;</span>
@@ -19,10 +22,14 @@ function CoursePageHeader({ obj_sum, obj_data, CalcRate }) {
             <span className="arrow">&#10148;</span>
             <a href="">Python</a>
           </div>
-          <h1 className="crstitle">{obj_sum.title}</h1>
+          <img
+            src={obj_sum.image_480x270}
+            className="Courseheader-img hidden_items"
+          />
+          <p className="crstitle">{obj_sum.title}</p>
           <p className="crsheadline">{obj_sum.headline}</p>
           <div className="rate">
-            <span className="checked">
+            <span className="checked num-rate">
               {Math.round(10 * obj_sum.avg_rating_recent) / 10}
             </span>
             {CalcRate(obj_sum.avg_rating_recent).map((cls) => {
@@ -43,30 +50,44 @@ function CoursePageHeader({ obj_sum, obj_data, CalcRate }) {
           </div>
 
           <div className="extra-data">
-            <span className="lst-update">
-              &#x2755; Last updated {obj_sum.last_update_date}{" "}
-            </span>
-            <span className="lang">
-              <img
-                className="lang-icon"
-                src="../images/icons/lang.png"
-                width={15}
-                height={15}
-              ></img>
-              <span className="lang-txt"> English </span>
-            </span>
-            <span className="subtitle">
-              <img
-                className="sub-icon"
-                src="../images/icons/sub.png"
-                width={15}
-                height={15}
-              ></img>
-              <span className="subtitle">English </span>
-            </span>
+            <div className="lst-update icon-flx">
+              <MdNewReleases />
+              <div>Last Update {obj_sum.last_update_date}</div>
+            </div>
+            <div className="lang icon-flx">
+              <MdLanguage />
+              <div>{obj_sum.locale.simple_english_title}</div>
+            </div>
+            <div>
+              {obj_sum.has_closed_caption ? (
+                <div className="subtitle icon-flx">
+                  <MdClosedCaption />
+                  <div>{obj_sum.caption_languages}</div>
+                </div>
+              ) : null}
+            </div>
+          </div>
+          <h2 className="price-cover hidden_items">
+            {obj_sum.price.discount_price.price_string}
+          </h2>
+          <button className="add-to-cart-cover hidden_items">
+            Add to cart
+          </button>
+          <div className="money-back-cover hidden_items">
+            30-Day Money-Back Guarantee
+          </div>
+          <div className="share-gift-apply-cover hidden_items">
+            <a href="\#" className="links-cover hidden_items">
+              Share
+            </a>
+            <a href="\#" className="links-cover hidden_items">
+              Gift this course
+            </a>
+            <a href="\#" className="links-cover hidden_items">
+              Apply Coupon
+            </a>
           </div>
         </div>
-        <SideCard getperc={getperc} obj_sum={obj_sum} />
       </div>
     </>
   );

@@ -12,14 +12,17 @@ function CoursePage() {
   const { data } = useContext(CourseContext);
   const { summary } = useContext(CourseContext);
   const { review } = useContext(CourseContext);
+  // get the data index of the current course from the fetched data
   const getidx = (arr, val) => {
     for (let i = 0; i < arr.length; i++) {
       if (arr[i].id == val) return i;
     }
   };
+  // assign to every object the data related to current course
   const obj_data = { ...data[getidx(data, id)] };
   const obj_rev = { ...review[getidx(review, id)] };
   const obj_sum = { ...summary[0].items[[getidx(summary[0].items, id)]] };
+  //////////////////calc stars for the given rate////////////////////////
   const CalcRate = (rate) => {
     let x = Math.floor(rate);
     const StarsArr = [];
@@ -28,7 +31,9 @@ function CoursePage() {
       StarsArr.push(star);
     }
     if (x != rate)
-      StarsArr.push(`<span className="fa fa-star-half-full checked"> </span> `);
+      StarsArr.push(
+        `<span className="fa fa-star fa-star-half-full checked"> </span> `
+      );
     while (StarsArr.length < 5) {
       StarsArr.push(`<span className="not fa fa-star"> </span>`);
     }
