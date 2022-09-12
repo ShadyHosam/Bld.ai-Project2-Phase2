@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+span {
+  display: inline-block;
+}
+.page-header {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.889);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-left: 120px;
+  margin-left: 0px;
+  padding-right: 50px;
+  max-height: 350px;
+}
+.page-header-content {
+  padding: 0;
+  margin: 0;
+}
+.page-header-content a {
+  color: rgb(206, 192, 252);
+}
+.page-header-content .arrow {
+  margin: 0 13px;
+}
+.path {
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+}
+.page-header-content .crstitle {
+  letter-spacing: -1px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 45px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  max-width: 700px;
+}
+.page-header-content .crsheadline {
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 650px;
+  line-height: 26.6px;
+}
+.page-header-content .rate,
+.page-header-content .authors {
+  width: fit-content;
+  margin-bottom: 9px;
+}
+.page-header-content .std {
+  margin-left: 10px;
+}
+.extra-data {
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 400;
+}
+.lst-update,
+.lang {
+  margin-right: 10px;
+}
+
+.lang-icon,
+.sub-icon {
+  margin-bottom: 3px;
+  margin-right: 3px;
+}
