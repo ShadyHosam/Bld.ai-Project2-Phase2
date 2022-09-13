@@ -1,0 +1,126 @@
+.page-header {
+  background-color: rgba(0, 0, 0, 0.889);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 25px 0;
+}
+.page-header-content {
+  width: 90%;
+  margin: auto;
+}
+.page-header-content a {
+  color: rgb(206, 192, 252);
+}
+.page-header-content .arrow {
+  margin: 0 13px;
+}
+.page-header-content .crstitle {
+  letter-spacing: -1px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 45px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  max-width: 700px;
+}
+.page-header-content .crsheadline {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26.6px;
+  max-width: 60%;
+  margin: 1rem 0rem;
+}
+.page-header-content .rate,
+.page-header-content .authors {
+  width: fit-content;
+  margin-bottom: 9px;
+}
+.page-header-content .std {
+  margin-left: 10px;
+}
+.extra-data {
+  display: flex;
+  gap: 20px;
+}
+.icon-flx {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+.hidden_items {
+  display: none;
+}
+.Courseheader-img {
+  width: 100%;
+  object-fit: cover;
+  margin: 1rem auto;
+}
+.add-to-cart-cover {
+  width: 100%;
+  background-color: #a435f0;
+  color: white;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 7px;
+  font-weight: 700;
+  margin: 0.5rem auto;
+}
+.add-to-cart-cover:hover {
+  background-color: #742ca4;
+}
+.money-back-cover {
+  text-align: center;
+  margin: 0.6rem auto;
+  font-size: 0.7rem;
+}
+.share-gift-apply-cover {
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex !important;
+  justify-content: space-between;
+  color: white;
+}
+@media only screen and (max-width: 1080px) {
+  .page-header-content {
+    width: 80%;
+    margin: auto;
+  }
+  .crstitle {
+    max-width: 100% !important;
+    font-size: 1.2rem !important;
+  }
+  .crsheadline {
+    max-width: 100% !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    margin: 0rem 0rem !important;
+  }
+  .hidden_items {
+    display: block;
+  }
+  .num-rate,
+  .str-rate,
+  .std {
+    font-size: 0.7rem;
+    margin: 0.2rem 0rem;
+  }
+  .rate .fa {
+    font-size: 0.7rem;
+  }
+  .authors {
+    font-size: 0.7rem;
+    margin: 0rem 0rem;
+  }
+  .extra-data {
+    flex-direction: column;
+    font-size: 0.7rem;
+    margin: 0rem 0rem;
+    gap: 3px;
+    margin-bottom: 15px;
+  }
+  .share-gift-apply-cover {
+    font-size: 0.7rem;
+  }
+}

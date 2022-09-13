@@ -1,0 +1,59 @@
+.instructors {
+  margin-top: 25px;
+}
+.instructor {
+  margin-bottom: 20px;
+}
+.h2-inst {
+  font-size: 24px;
+  font-weight: 700;
+}
+.instructor-name {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 3px;
+  color: rgb(142, 27, 219);
+  text-decoration: underline;
+}
+.instructor-name:hover {
+  color: rgb(142, 27, 219);
+}
+.instructor-brief {
+  margin: 0;
+  color: rgb(106, 111, 115);
+  font-size: 16px;
+  font-weight: 400;
+}
+.instructor-img {
+  width: 95px;
+  height: 95px;
+  border-radius: 50px;
+}
+.instructor-card {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.instructor li {
+  font-size: 15px;
+  font-weight: 600;
+}
+.instructor-desc {
+  font-size: 14.5px;
+  font-weight: 500;
+}
+
+.instructor-desc .btn {
+  width: fit-content;
+  display: block;
+  color: #a435f0;
+  font-size: 13.5px;
+  font-weight: 700;
+  margin: 12px;
+  margin-left: 0;
+  padding: 0;
+}
+hr {
+  border: 3px solid #f1f1f1;
+}

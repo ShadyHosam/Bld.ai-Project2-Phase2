@@ -1,0 +1,10 @@
+.page-contianer {
+  width: 55%;
+  margin-left: 70px;
+}
+@media only screen and (max-width: 1080px) {
+  .page-contianer {
+    width: 95%;
+    margin: 0 auto;
+  }
+}

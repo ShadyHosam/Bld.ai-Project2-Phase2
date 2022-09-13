@@ -1,0 +1,149 @@
+.course-text-container {
+  margin-top: 0;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.course-selection {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 33px;
+}
+.course-intro {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 19px;
+}
+.course-related-topics {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  padding-left: 35px;
+}
+.course-related-topics .listOfCourses {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: grey;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+.listOfCourses :hover {
+  color: rgb(0, 0, 0);
+}
+.active {
+  color: black !important;
+}
+
+.course-related-topics li {
+  list-style: none;
+}
+.courses {
+  font-family: sans-serif;
+  border: 1px solid rgb(187, 187, 187);
+  padding: 25px;
+  padding-bottom: 10px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.courses-header-text .title {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+.courses-header-text .details {
+  font-weight: 450;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.839);
+  padding-bottom: 25px;
+  max-width: 830px;
+}
+.Explore-btn {
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+.Explore-btn:hover {
+  background-color: rgba(128, 128, 128, 0.174);
+}
+.checked {
+  color: rgb(255, 166, 0);
+}
+.fa {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+.course-preview-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+.course-preview-container a:hover,
+.course-preview:hover {
+  color: black;
+}
+.course-preview-container a:hover,
+.course-preview:focus {
+  color: black;
+}
+.course-img img {
+  width: 100%;
+  border: 1px solid rgb(214, 214, 214);
+}
+.course-preview {
+  cursor: pointer;
+  margin: 15px 0px;
+  background-color: white;
+  border: none;
+}
+.course-info div {
+  padding: 5px 0 0 0;
+  font-weight: bold;
+}
+.course-info .course-description {
+  padding: 5px 0 0 0;
+  font-weight: bold;
+}
+.course-info .course-author {
+  font-size: 13px;
+  color: gray;
+  font-weight: 100;
+}
+.students {
+  margin-left: 8px;
+  font-size: 13px;
+  font-weight: 200;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.course-price {
+  font-weight: 700;
+  margin-right: 10px;
+}
+.course-price.old {
+  font-size: 13px;
+  margin-right: 0;
+  color: rgba(0, 0, 0, 0.507);
+  font-weight: 400;
+  text-decoration: line-through;
+}
+@media screen and (max-width: 770px) {
+  .course-preview-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 700px) {
+  .course-preview-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 590px) {
+  .course-preview-container {
+    grid-template-columns: 1fr;
+  }
+}

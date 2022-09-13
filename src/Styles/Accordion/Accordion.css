@@ -1,0 +1,52 @@
+.accord-container {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.145);
+}
+.accordion-body {
+  padding: 0;
+  margin: 20px;
+  margin-left: 10px;
+}
+.accordion-body li {
+  margin-top: 15px;
+}
+
+.try {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 12px;
+}
+.try1,
+.try2 {
+  margin: 0;
+  padding: 0;
+}
+.try2 {
+  font-size: 14px;
+  font-weight: 400;
+}
+:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+.showMore {
+  width: 100%;
+  background-color: #f7f9fa;
+  margin-top: 20px;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.145);
+}
+.accordion-header button {
+  background-color: #f7f9fa;
+  font-weight: bold;
+  border: none;
+}
+@media only screen and (max-width: 700px) {
+  .try {
+    flex-direction: column;
+  }
+  .try2 {
+    margin-top: 10px;
+  }
+}

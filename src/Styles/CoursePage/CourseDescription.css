@@ -1,0 +1,34 @@
+.course-description h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.course-description {
+  margin-top: 30px;
+}
+.course-description ul {
+  padding: 0;
+  padding-left: 15px;
+}
+.course-description li {
+  margin-top: 10px;
+}
+
+.descriptiontxt {
+  font-size: 14.5px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.descriptiontxt .btn {
+  width: fit-content;
+  display: block;
+  color: #a435f0;
+  font-size: 13.5px;
+  font-weight: 700;
+  margin: 12px;
+  margin-left: 0;
+  padding: 0;
+}
+.descriptiontxt .btn:hover {
+  color: #892dc6;
+}
