@@ -1,12 +1,16 @@
 import { React, useContext } from "react";
-import { CourseContext } from "../../Contexts/CoursesContext";
+
+//import { CourseContext } from "../../Contexts/CoursesContext";
+import { CourseContext } from "../../../Contexts/CoursesContext";
+
 import { useParams } from "react-router-dom";
-import "../../Styles/CoursePage/CoursePage.css";
-import CoursePageHeader from "../../components/Widgets/CoursePageHeader";
-import CourseContent from "../../components/CourseContent/CourseContent";
-import CourseInfo from "../../components/Widgets/CourseInfo";
-import Instructors from "../../components/Instructors/Instructors";
-import Reviews from "../../components/Reviews/Reviews";
+import "../../../Styles/CoursePage/CoursePage.css";
+import CoursePageHeader from "../../Widgets/CoursePageHeader";
+//import CourseContent from "../../components/CourseContent/CourseContent";
+import CourseContent from "../../CourseContent/CourseContent";
+import CourseInfo from "../../Widgets/CourseInfo";
+import Instructors from "../../Instructors/Instructors";
+import Reviews from "../../Reviews/Reviews";
 function CoursePage() {
   const { id } = useParams();
   const { data } = useContext(CourseContext);

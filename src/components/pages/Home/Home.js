@@ -1,5 +1,6 @@
-import Header from "../../components/Widgets/Header";
-import Main from "../../components/Widgets/Main";
+import Header from "../../Widgets/Header";
+import Main from "../../Widgets/Main";
+
 import React from "react";
 function Home({ searchVal }) {
   return (
