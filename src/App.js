@@ -4,8 +4,9 @@ import { Routes, Route } from "react-router-dom";
 import axios from "axios";
 import Nav from "./components/Widgets/Nav";
 import Footer from "./components/Widgets/Footer";
-import Home from "./pages/Home/Home";
-import CoursePage from "./pages/CoursePage/CoursePage";
+import Home from "./components/pages/Home/Home";
+// import CoursePage from "./pages/CoursePage/CoursePage";
+import CoursePage from "./components/pages/CoursePage/CoursePage";
 import LoadingSpinner from "./components/Atoms/LoadingSpinner";
 import "../src/App.css";
 function App() {
