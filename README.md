@@ -1,5 +1,4 @@
-# Getting Started with Create React App
-
+# codyy manga
 1 - npm install <br>
 2 - npm-install react-bootstrap <br>
 3 - npx json-server --watch Constants/DB.json --port 8000 <br>
